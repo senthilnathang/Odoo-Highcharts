@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <template id="assets_backend_highcharts" name="Highcharts" inherit_id="web.assets_backend">
+            <xpath expr="//script[last()]" position="after">
+                <script type="text/javascript" src="/web_highcharts/static/src/js/highcharts.js"></script>
+                <script type="text/javascript" src="/web_highcharts/static/src/js/bullet.js"></script>
+                <script type="text/javascript" src="/web_highcharts/static/src/js/highcharts-3d.js"></script>
+                <script type="text/javascript" src="/web_highcharts/static/src/js/exporting.js"></script>
+                <script type="text/javascript" src="/web_highcharts/static/src/js/no-data-to-display.js"></script>
+                <script type="text/javascript" src="/web_highcharts/static/src/js/svg2pdf.js"></script>
+                <script type="text/javascript" src="/web_highcharts/static/src/js/highcharts-more.js"></script>
+                <style>
+                    .o_form_view.o_form_nosheet
+                    {
+                        overflow:hidden;
+                        /*color:#FFF*/
+                    }
+                </style>
+            </xpath>
+        </template>
+    </data>
+</odoo>
